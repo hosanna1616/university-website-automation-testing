@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="DTU Website Test Suite" parallel="methods" thread-count="1">
+    <test name="Functional Tests">
+        <classes>
+            <class name="com.testing.whitebox.FunctionalTest"/>
+        </classes>
+    </test>
+    
+    <test name="Usability Tests">
+        <classes>
+            <class name="com.testing.whitebox.UsabilityTest"/>
+        </classes>
+    </test>
+    
+    <test name="Compatibility Tests">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="com.testing.whitebox.CompatibilityTest"/>
+        </classes>
+    </test>
+    
+    <test name="Home Page Tests">
+        <classes>
+            <class name="com.testing.whitebox.HomePageTest"/>
+        </classes>
+    </test>
+</suite>
+
